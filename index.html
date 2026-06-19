@@ -1,1 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte - Futuro Sustentável</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f0ff;
+      color:#2d124d;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(58,12,99,0.7), rgba(88,28,135,0.7)),
+      url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      text-shadow:2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero p{
+      font-size:1.3rem;
+      max-width:800px;
+      margin:auto;
+    }
+
+    nav{
+      background:#4b0082;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d8b4fe;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .titulo h2{
+      font-size:2.5rem;
+      color:#5b21b6;
+      margin-bottom:10px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h3{
+      color:#6d28d9;
+      margin-bottom:15px;
+    }
+
+    .banner{
+      background:linear-gradient(135deg,#6b21a8,#4c1d95);
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .banner h2{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .contador{
+      font-size:4rem;
+      font-weight:bold;
+      color:#e9d5ff;
+    }
+
+    footer{
+      background:#2e1065;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#c084fc;
+      color:#2e1065;
+      font-weight:bold;
+      border-radius:30px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      nav ul{
+        flex-direction:column;
+        align-items:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Agro Forte, Futuro Sustentável</h1>
+      <p>
+        Equilíbrio entre produção e meio ambiente, fortalecendo a agricultura familiar,
+        o agronegócio e práticas sustentáveis para garantir alimento, renda e preservação.
+      </p>
+
+      <a href="#sustentabilidade" class="btn">Saiba Mais</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#familia">Agricultura Familiar</a></li>
+      <li><a href="#agronegocio">Agronegócio</a></li>
+      <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+    </ul>
+  </nav>
+
+  <section id="familia">
+    <div class="titulo">
+      <h2>Agricultura Familiar</h2>
+      <p>Base da alimentação e da economia local.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop" alt="Agricultura Familiar">
+
+        <div class="card-content">
+          <h3>Produção de Alimentos</h3>
+          <p>
+            A produção moderna de alimentos utiliza alta tecnologia e biotecnologia para garantir a segurança alimentar global de forma eficiente. O grande desafio atual é aumentar a produtividade no mesmo espaço terrestre, combatendo o desperdício em toda a cadeia logística. Assim, práticas sustentáveis e novas fontes de proteínas surgem para garantir comida na mesa sem esgotar o planeta.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Campo Sustentável">
+
+        <div class="card-content">
+          <h3>Preservação Ambiental</h3>
+          <p>
+            Pequenos produtores utilizam práticas sustentáveis, preservando recursos naturais
+            e incentivando o equilíbrio ecológico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agronegocio">
+    <div class="titulo">
+      <h2>Força do Agronegócio</h2>
+      <p>Tecnologia, inovação e crescimento econômico.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop" alt="Agronegócio">
+
+        <div class="card-content">
+          <h3>Produção em Escala</h3>
+          <p>
+            O agronegócio impulsiona a economia brasileira, gera empregos e abastece mercados
+            nacionais e internacionais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1200&auto=format&fit=crop" alt="Tecnologia no Campo">
+
+        <div class="card-content">
+          <h3>Inovação no Campo</h3>
+          <p>
+            Máquinas modernas, agricultura de precisão e energias renováveis tornam o campo
+            mais eficiente e sustentável.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sustentabilidade">
+    <div class="titulo">
+      <h2>Sustentabilidade</h2>
+      <p>Produzir hoje pensando nas próximas gerações.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop" alt="Natureza">
+
+        <div class="card-content">
+          <h3>Meio Ambiente</h3>
+          <p>
+            O uso consciente da água, do solo e das florestas garante um futuro mais equilibrado
+            entre produção agrícola e preservação ambiental.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Sustentabilidade">
+
+        <div class="card-content">
+          <h3>Futuro Verde</h3>
+          <p>
+            Sustentabilidade significa investir em energias limpas, reflorestamento e práticas
+            agrícolas responsáveis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <h2>O Agro Move o Mundo</h2>
+
+    <div class="contador" id="contador">0</div>
+
+    <p>
+      Milhões de pessoas dependem diariamente da agricultura e do agronegócio sustentável.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 - Agro Forte | Futuro Sustentável 🌱
+    </p>
+  </footer>
+
+  <script>
+    let contador = document.getElementById("contador");
+    let numero = 0;
+
+    function animarContador(){
+      let intervalo = setInterval(() => {
+        numero += 100000;
+
+        contador.innerHTML = numero.toLocaleString('pt-BR');
+
+        if(numero >= 5000000){
+          clearInterval(intervalo);
+        }
+      }, 50);
+    }
+
+    window.addEventListener("load", animarContador);
+  </script>
+
+</body>
+</html>
